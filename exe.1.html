@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>paramaters exercise</title>
+</head>
+<body>
+    <script>
+        function div(x , y=1) {
+            return x/y
+        }
+        function is_negative(x) {
+            if (x < 0) {
+                return true
+            }
+            else {
+                return false
+            }
+            return x < 0
+        }
+        function greatest(x=0 , y=0 ,z=0 ) {
+            if (x > y && x > z) {
+                return x
+            }
+            else if (y > z ) {
+                return y
+            }
+            else{
+                return z
+            }
+            x > y && x > z ? x : y > z ? y : z
+        }
+
+    </script>
+    
+</body>
+</html>

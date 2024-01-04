@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>homework solotion returns</title>
+</head>
+
+<body>
+    <button onclick="mix('roba','6')">roba</button>
+    <p id="hero"></p>
+    <script>
+        function numbers(x = 0, y = 0) {
+            if (x === y) {
+                return true
+            }
+            else {
+                return false
+            }
+            return x == y
+        }
+        console.log(numbers(5,10))
+        console.log(numbers())
+        document.write(numbers(5,10) + "<br>")
+        function the_smallest(x, y, z) {
+            if (x < y && x < z) {
+                return x
+            }
+            if (y < z) {
+                return y
+            }
+            else {
+                return z
+            }
+            return x < y && x < z ? x : y < z ? y : z
+        }
+        console.log(the_smallest(10,20,15))
+        document.write(the_smallest(15,-6,35465)+ "<br>")
+        function mix(name="seasamie" , x=1) {
+            for (let i = 1; i <= x; i++) {
+                document.write(name)
+            }
+        }
+        document.write(mix("roba",3) + "<br>")
+        mix("java",3)
+        document.write("<br>")
+        function the_longest(nam1, nam2) {
+            if (nam1.length > nam2.length) {
+                return nam1
+            }
+            else{
+                return nam2
+            }
+            return nam1.length > nam2.length ? nam1 : nam2
+        }
+        document.write(the_longest("roba", "moadi") + "<br>")
+        function repeat(x=1) {
+            let multi=1
+            for (let i = 2; i < x; i++){
+                multi *= x
+            }
+            return multi
+        }
+        document.write(repeat(6))
+
+    </script>
+
+</body>
+
+</html>

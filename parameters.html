@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>start of paramaters</title>
+</head>
+<body>
+    <script>
+        function sum(x=0 , y=0) {
+            console.log(x + y)
+            
+        }
+        sum()
+        sum(20)
+        sum(30 , 15)
+        function divi(x , y=1) {
+            console.log(x / y)
+        }
+        divi(5)
+        divi(125)
+        divi(10 , 15)
+        function meet(fname="john" , lname="doe" , country="israel" ) {
+            console.log(fname + " " + lname + " " + country)
+        }
+        meet()
+        meet("danny", undefined ,"usa" )
+        meet(undefined, undefined,"canada")
+
+    </script>
+</body>
+</html>
